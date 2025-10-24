@@ -1,9 +1,9 @@
-/* ===== BASE RESET ===== */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 body {
   background-color: #020617;
@@ -19,7 +19,7 @@ section {
 
 /* ===== GRID BACKGROUND ===== */
 .grid-bg {
-  position: center;
+  position: fixed;
   inset: 0;
   z-index: 0;
   background-image: linear-gradient(
@@ -28,9 +28,10 @@ section {
       transparent 1px
     ),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 80px 60px;
+  background-size: 40px 60px;
 }
 
+/* ===== PARTICLES ===== */
 #particles {
   position: fixed;
   inset: 0;
@@ -73,57 +74,80 @@ nav a:hover {
 .menu-btn {
   display: none;
 }
-
-/* ===== HERO ===== */
+/* Hero Section */
 .hero {
-  height: 100vh;
+  position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20px 40px;
+}
+.hero-content {
   text-align: center;
 }
-.hero h1 {
-  font-size: 2.7rem;
-  max-width: 800px;
-  background: linear-gradient(to right, #c9d6ff, #4fa3ff);
+.clients_div {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.hero-content .h1 {
+  font-size: 60px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #4fa3ff, #ff6ec4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(79, 163, 255, 0.4);
 }
-.hero p {
-  margin: 20px 0 40px;
-  color: #9dbaf8;
-  max-width: 600px;
+.part_1 h1 i {
+  font-size: 40px;
+  color: #4fa3ff;
+  margin: 0 10px;
 }
-.btns {
-  display: flex;
-  gap: 20px;
+.part_1 h1 {
+  color: #fff;
 }
-.btn {
-  padding: 12px 24px;
-  border-radius: 30px;
-  font-weight: 500;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s;
+
+.buttos{
+    margin: 20px 0;
 }
-.primary {
-  background: linear-gradient(90deg, #4fa3ff, #3b82f6);
-  color: white;
+.buttos button{
+    padding: 10px 50px;
+    margin: 20px 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s;
 }
-.secondary {
-  background: rgba(255, 255, 255, 0.1);
-  color: #c9d6ff;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(8px);
+.buttos button.get_start{
+    background: #4fa3ff;
+    color: #fff;
 }
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 20px rgba(79, 163, 255, 0.3);
+.buttos button.get_start:hover{
+    background: #3a82d1;
 }
- 
+.buttos button.Explore_btn{
+    background: transparent;
+    color: #4fa3ff;
+    border: 1px solid #4fa3ff;
+}
+.buttos button.Explore_btn:hover{
+    background: #4fa3ff;
+    color: #fff;
+}
+
+/* Setions */
+.about {
+  position: relative;
+  width: 100%;
+  padding: 20px 40px;
+  background: #020617;
+}
+
 @media (max-width: 768px) {
   nav {
     padding: 15px 20px;
