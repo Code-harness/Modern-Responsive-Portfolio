@@ -1,8 +1,14 @@
 const menuBtn=document.querySelector('.menu-btn');
     const navList=document.querySelector('nav ul');
-    menuBtn.onclick=()=>navList.style.display=navList.style.display==='flex'?'none':'flex';
+    menuBtn.onclick=()=>{
+        if(navList.style.display==='flex'){
+            navList.style.display='none';
+        }else{
+            navList.style.display='flex';
+        }
+    };
 
-    /* ===== PARTICLES ===== */
+  
     const canvas=document.getElementById("particles");
     const ctx=canvas.getContext("2d");
     let particles=[];

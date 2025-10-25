@@ -1,0 +1,214 @@
+/* =======================
+   RESPONSIVE DESIGN FILE
+   ======================= */
+
+/* ----- Medium screens: Tablets and small laptops ----- */
+@media (max-width: 1024px) {
+  section {
+    padding: 80px 40px;
+  }
+
+  nav {
+    padding: 15px 40px;
+  }
+
+  .about,
+  .choose_us,
+  .our_port,
+  .testmony,
+  .cta_footer {
+    padding: 4rem 5rem;
+  }
+
+  .hero .h1 {
+    font-size: 48px;
+  }
+
+  .about .service_cards,
+  .choose_cards,
+  .portfolio_gallery,
+  .testimonials {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+/* ----- Small screens: Tablets & large phones ----- */
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 25px;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 15px;
+    background-color: #121212;
+    flex-direction: column;
+    width: 100%;
+    /* border: 1px solid #4fa3ff; */
+    display: none;
+  }
+  nav ul li {
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid #4fa3ff;
+  }
+  
+
+  .menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    color: #4fa3ff;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+  .hero .h1 {
+    font-size: 40px;
+    margin-top: 80px;
+  }
+  .part_1 h1{
+    font-size: 20px;
+  }
+
+.combo1,.combo2{
+    display:block;
+}
+  .buttos button {
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .about,
+  .choose_us,
+  .our_port,
+  .testmony,
+  .cta_footer {
+    padding: 3rem 2rem;
+  }
+
+  .service_cards,
+  .choose_cards,
+  .portfolio_gallery,
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .div1_footer {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer_links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta_footer h2 {
+    font-size: 2rem;
+  }
+
+  .cta_footer button {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .div3_footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+/* ----- Very small screens: Mobile phones ----- */
+@media (max-width: 480px) {
+  section {
+    padding: 60px 15px;
+  }
+
+  nav h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero .h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .about h1,
+  .choose_us h2,
+  .our_port h2,
+  .testmony h2,
+  .cta_footer h2 {
+    font-size: 1.8rem;
+  }
+
+  .about p,
+  .choose_header,
+  .port_header,
+  .test_header {
+    font-size: 0.95rem;
+  }
+
+  .card_ser,
+  .choose_card,
+  .portfolio_item,
+  .testimonial_card {
+    padding: 20px;
+  }
+
+  .cta_footer {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .div3_footer h4 {
+    font-size: 0.8rem;
+  }
+
+  .social-icons a {
+    width: 34px;
+    height: 34px;
+  }
+  .div2_footer form{
+    flex-direction: column;
+  }
+  .footer_links{
+      flex: 2 1 450px;
+    gap: 5px;
+  }
+
+  .div2_footer form input {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  section {
+    padding: 120px 180px;
+  }
+
+  .hero .h1 {
+    font-size: 72px;
+  }
+
+  .about,
+  .choose_us,
+  .our_port,
+  .testmony {
+    padding: 6rem 14rem;
+  }
+}
