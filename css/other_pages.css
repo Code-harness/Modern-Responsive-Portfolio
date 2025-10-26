@@ -150,6 +150,118 @@ ul li::marker {
   background: #121830;
 }
 
+/* contact page styles */
+.contact {
+  padding: 80px 60px;
+}
+
+.div_contact_info {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+.div_contact_form{
+  width: 40%;  
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  height:fit-content;
+  border-radius: 10px;
+}
+.contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.contact p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+.div_contact_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact form label {
+  font-weight: 600;
+}
+.contact form input,
+.contact form textarea {
+  padding: 12px 16px;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: solid 2px #c9d6ff;
+}
+.contact form textarea{
+  resize: none;
+  height: 150px;
+}
+.contact form button {
+  padding: 12px 30px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #4fa3ff, #ff6ec4);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact form button:hover {
+  background: linear-gradient(to right, #4fa3ff, #ff6ec4);
+}
+.div_contact_cards {
+  width: 50%;
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact_card_details{
+  width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px;
+  margin: 15px 0;
+  display: flex;
+  
+}
+.contact_card_details .card_info1 {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact_card_details .card_info1 button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to left, #4fd6ff, #3a82d1);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact_card_details .card_info2 h3 {
+  margin: 10px 0;
+  color: #4fa3ff;
+}
+.contact_card_details .card_info2 a {
+  margin-top: 8px;
+  display: block;
+  color: #ff6ec4;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.contact_card_details .card_info2 p {
+  margin-top: 8px;
+  line-height: 1.6;
+  color: #c9d6ff;
+}
+
+
 /* footer */
 footer {
   position: relative;
