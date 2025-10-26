@@ -54,7 +54,6 @@
     text-align: center;
     border-bottom: 1px solid #4fa3ff;
   }
-  
 
   .menu-btn {
     display: block;
@@ -75,19 +74,23 @@
     font-size: 40px;
     margin-top: 80px;
   }
-  .part_1 h1{
+  .part_1 h1 {
     font-size: 20px;
   }
 
-.combo1,.combo2{
-    display:block;
-}
+  .combo1,
+  .combo2 {
+    display: block;
+  }
   .buttos button {
     width: 80%;
     margin: 10px auto;
     display: block;
   }
-
+  .service_cards {
+    padding: 0;
+  }
+  .services_sec,
   .about,
   .choose_us,
   .our_port,
@@ -181,11 +184,11 @@
     width: 34px;
     height: 34px;
   }
-  .div2_footer form{
+  .div2_footer form {
     flex-direction: column;
   }
-  .footer_links{
-      flex: 2 1 450px;
+  .footer_links {
+    flex: 2 1 450px;
     gap: 5px;
   }
 
@@ -194,7 +197,6 @@
     margin: 10px 0px;
   }
 }
-
 
 @media (min-width: 1440px) {
   section {
