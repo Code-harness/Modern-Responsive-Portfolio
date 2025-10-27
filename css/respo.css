@@ -145,8 +145,7 @@
   } */
 }
 
-/* Contact Form Styles */
-/* ----- Very small screens: Mobile phones ----- */
+/* Contact Form Styles design */
 @media (max-width: 480px) {
   section {
     padding: 60px 15px;
